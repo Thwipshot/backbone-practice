@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Hello there using Backbone.js</title>
+
+  </head>
+
+  <body>
+
+    <!-- ========= -->
+
+    <!-- The HTML -->
+
+    <!-- ========= -->
+
+    <div id="container">Loading...</div>
+
+    <!-- ========= -->
+
+    <!-- The Libraries -->
+
+    <!-- ========= -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone.js"></script>
+
+    <!-- ========= -->
+
+    <!-- Javascript -->
+
+    <!-- ========= -->
+
+    <script type="text/javascript">
+      var ApplicationView = Backbone.View.extend({
+
+        // elem - stands for element Every view will have an element associated with the HTML content, which will be rendered.
+
+        elem: '#container',
+
+        // It is the first function to be called when the view has been instantiated.
+
+        initialize: function(){
+
+          this.render();
+
+        },
+
+        // $elem - it is a cached jQuery object (elem), whereby jQuery content can be used for pushing the content. Like the Hello there in this case.
+
+        render: function(){
+
+          this.$el.html("Hello there!!");
+          
+        }
+      });
+
+      var applicationView = new ApplicationView();
+    </script>
+
+  </body>
+</html>
