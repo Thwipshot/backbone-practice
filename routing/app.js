@@ -7,7 +7,7 @@ var FirstView = Backbone.View.extend({
 
 var SecondView = Backbone.View.extend({
   render: function() {
-    this.$el.html("A secondary view that is like what would be shown when you click on a button or so to navigate to another view");
+    this.$el.html("A secondary view that is like what would be shown when you click on a button or so to navigate to another view <ul> <li>item1</li><li>item2</li><li>item3</li></ul>");
     return this;
   }
 });
